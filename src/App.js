@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import estela from './img/estela.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section class="bg-pink-400 min-h-screen flex items-center justify-center">
+        {/* main container*/}
+        <div class="bg-gray-400 flex shadow-lg rounded-2xl max-w-3xl p-5">
+          {/* left:login form */}
+          <div class="w-1/2">
+            <p>hello</p>
+          </div>
+
+          {/* right:image */}
+          <div class="w-1/2">
+            <img class="rounded-2xl" src={estela} alt=''/>
+          </div>
+
+        </div>
+      </section>
+    </>
   );
 }
 
